@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project_Mobile_App</string>
+    <string name="title_activity_detail__list__car">Detail_List_Car</string>
+    <string name="title_activity_detail_list_car">DetailListCar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_detail_car">DetailCar</string>
+    <string name="title_activity_order_car">OrderCar</string>
+    <string name="title_activity_order_detail">OrderDetail</string>
+    <string name="title_activity_detail_oder">DetailOder</string>
+</resources>

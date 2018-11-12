@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/spinnerCity"
+        android:layout_marginStart="28dp"
+        android:text="City"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBrand"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textCountry"
+        android:layout_marginTop="104dp"
+        android:text="Brand"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textCountry"
+        android:layout_marginTop="152dp"
+        android:text="Model"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="230dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/textBrand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCountry"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinnerBrand"
+        android:layout_width="230dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/textBrand"
+        android:layout_toEndOf="@+id/textCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCountry"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerModel"
+        android:layout_width="230dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/textCity"
+        android:layout_toEndOf="@+id/textCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCountry"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eDate"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fDate"
+        android:layout_toEndOf="@+id/fDate"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test" />
+
+    <EditText
+        android:id="@+id/fDate"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textCountry"
+        android:layout_marginBottom="182dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/eDate"
+        app:layout_constraintStart_toEndOf="@+id/eDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="62dp"
+        android:text="Take"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/eDate"
+        android:layout_centerVertical="true"
+        android:text="END"
+        app:layout_constraintBottom_toBottomOf="@+id/test"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:onClick="searchcar"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
