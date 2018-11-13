@@ -28,7 +28,7 @@ public class Search extends AppCompatActivity implements AdapterView.OnItemSelec
         addListCity();
         addListBrand();
         addListModel();
-        Log.i("img",""+R.mipmap.c2);
+
 
         Spinner spinner1 = findViewById(R.id.spinnerCity);
         spinner1.setOnItemSelectedListener(this);
@@ -136,6 +136,7 @@ public class Search extends AppCompatActivity implements AdapterView.OnItemSelec
     private void updateListModel() {
        // Log.i("update","in");
         list_model = new ArrayList<String>();
+        list_model.add("");
         if (str_brand==""){
             Log.i("update","1");
 
@@ -146,7 +147,7 @@ public class Search extends AppCompatActivity implements AdapterView.OnItemSelec
             for (int i=0;i<list_car_toyota.size();i++){
                 list_model.add(list_car_toyota.get(i).toString());
             }
-        }else if(str_brand=="TOYOTA"){
+        }else if(str_brand=="TOYATA"){
             Log.i("update","2");
             for (int i=0;i<list_car_toyota.size();i++){
                 list_model.add(list_car_toyota.get(i).toString());
