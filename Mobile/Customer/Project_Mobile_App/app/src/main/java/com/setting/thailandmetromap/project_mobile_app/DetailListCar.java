@@ -37,8 +37,8 @@ public class DetailListCar extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_list_car);
 
-        url="http://192.168.10.117:8888/Mobile/select_car.php?";
-        url="http://192.168.43.227:8888/Mobile/select_car.php?";
+        url="http://192.168.43.101:8888/Mobile/select_car.php?";
+        url="http://192.168.43.101:8888/Mobile/select_car.php?";
 
 
 
